@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5eb2378d6127491313aa83dd9ad44df2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5eb2378d6127491313aa83dd9ad44df2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5eb2378d6127491313aa83dd9ad44df2 = L.map(
+                "map_5eb2378d6127491313aa83dd9ad44df2",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d511a2e25dbeb0195a968d5f276eb2a1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d511a2e25dbeb0195a968d5f276eb2a1.addTo(map_5eb2378d6127491313aa83dd9ad44df2);
+        
+    
+            var marker_cluster_3e96ce67efa2ffa50b592e574228ff93 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_d0fbcae0632da7bba2742b9584f74b09 = L.marker(
+                [47.59397, 14.12456],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_f21578b31a794120aa397b1d2455f726 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0fbcae0632da7bba2742b9584f74b09.setIcon(icon_f21578b31a794120aa397b1d2455f726);
+        
+    
+        var popup_88fe6d2f3e5f51edf76a42cb9de02157 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_83489f05335650d1575d21f5fe7f1ef7 = $(`<div id="html_83489f05335650d1575d21f5fe7f1ef7" style="width: 100.0%; height: 100.0%;">Country: Austria<br>Tourists: 19909000.0<br>Pollution: 0.08<br>Waste recycling: 25.66</div>`)[0];
+                popup_88fe6d2f3e5f51edf76a42cb9de02157.setContent(html_83489f05335650d1575d21f5fe7f1ef7);
+            
+        
+
+        marker_d0fbcae0632da7bba2742b9584f74b09.bindPopup(popup_88fe6d2f3e5f51edf76a42cb9de02157)
+        ;
+
+        
+    
+    
+            var marker_b6c33e591fb8fd13160d771ffeb656d0 = L.marker(
+                [50.6402809, 4.6667145],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_40e4a68efa1d9168f8afb95d92232fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6c33e591fb8fd13160d771ffeb656d0.setIcon(icon_40e4a68efa1d9168f8afb95d92232fd2);
+        
+    
+        var popup_15c0aae3fddc4d19ab232844d1ce8998 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8cc787852ef8943ddaf3ee6c256ffcee = $(`<div id="html_8cc787852ef8943ddaf3ee6c256ffcee" style="width: 100.0%; height: 100.0%;">Country: Belgium<br>Tourists: 6496961.0<br>Pollution: 0.21<br>Waste recycling: 34.303000000000004</div>`)[0];
+                popup_15c0aae3fddc4d19ab232844d1ce8998.setContent(html_8cc787852ef8943ddaf3ee6c256ffcee);
+            
+        
+
+        marker_b6c33e591fb8fd13160d771ffeb656d0.bindPopup(popup_15c0aae3fddc4d19ab232844d1ce8998)
+        ;
+
+        
+    
+    
+            var marker_bf81f2497a1062f4b3e87379ebedba1a = L.marker(
+                [45.3658443, 15.6575209],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_239a7bffc30f4ef9ce70b1e5a81ac477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf81f2497a1062f4b3e87379ebedba1a.setIcon(icon_239a7bffc30f4ef9ce70b1e5a81ac477);
+        
+    
+        var popup_99a08100da23b60e062fbf58146b56ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9c45a7e1f3527853237719dd4653f1a3 = $(`<div id="html_9c45a7e1f3527853237719dd4653f1a3" style="width: 100.0%; height: 100.0%;">Country: Croatia<br>Tourists: 7841461.0<br>Pollution: 0.11<br>Waste recycling: 16.32</div>`)[0];
+                popup_99a08100da23b60e062fbf58146b56ca.setContent(html_9c45a7e1f3527853237719dd4653f1a3);
+            
+        
+
+        marker_bf81f2497a1062f4b3e87379ebedba1a.bindPopup(popup_99a08100da23b60e062fbf58146b56ca)
+        ;
+
+        
+    
+    
+            var marker_4e304cb48c37fc94d86fcb96f1839cc5 = L.marker(
+                [46.603354, 1.8883335],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_139355bf90e4abc02337ced386dc79b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e304cb48c37fc94d86fcb96f1839cc5.setIcon(icon_139355bf90e4abc02337ced386dc79b4);
+        
+    
+        var popup_52202a357c114f72f4281ef7b2c71156 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_512454df11e4c3fee862db89830c7a13 = $(`<div id="html_512454df11e4c3fee862db89830c7a13" style="width: 100.0%; height: 100.0%;">Country: France<br>Tourists: 71176346.0<br>Pollution: 0.07<br>Waste recycling: 22.26</div>`)[0];
+                popup_52202a357c114f72f4281ef7b2c71156.setContent(html_512454df11e4c3fee862db89830c7a13);
+            
+        
+
+        marker_4e304cb48c37fc94d86fcb96f1839cc5.bindPopup(popup_52202a357c114f72f4281ef7b2c71156)
+        ;
+
+        
+    
+    
+            var marker_87e310dca5b5a4880d950e599f228f99 = L.marker(
+                [52.865196, -7.9794599],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_d20bcd87ace1db4ee30c219531bf3b46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_87e310dca5b5a4880d950e599f228f99.setIcon(icon_d20bcd87ace1db4ee30c219531bf3b46);
+        
+    
+        var popup_415e5782ad520f052a53ac3965f23313 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c22c8ca83e3b6dffcd9c37cb5bfdbabf = $(`<div id="html_c22c8ca83e3b6dffcd9c37cb5bfdbabf" style="width: 100.0%; height: 100.0%;">Country: Ireland<br>Tourists: 6942807.0<br>Pollution: 0.02<br>Waste recycling: 33.0</div>`)[0];
+                popup_415e5782ad520f052a53ac3965f23313.setContent(html_c22c8ca83e3b6dffcd9c37cb5bfdbabf);
+            
+        
+
+        marker_87e310dca5b5a4880d950e599f228f99.bindPopup(popup_415e5782ad520f052a53ac3965f23313)
+        ;
+
+        
+    
+    
+            var marker_f894e409763fe5815f5079a40358fe28 = L.marker(
+                [42.6384261, 12.674297],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_1eae65a20130a760f984fe4511dcc079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f894e409763fe5815f5079a40358fe28.setIcon(icon_1eae65a20130a760f984fe4511dcc079);
+        
+    
+        var popup_da76561ca3ffb0c38580e17bc2c6be7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_172069d5dddfd83142eb96c9c908705a = $(`<div id="html_172069d5dddfd83142eb96c9c908705a" style="width: 100.0%; height: 100.0%;">Country: Italy<br>Tourists: 39653776.0<br>Pollution: 0.15<br>Waste recycling: 25.9</div>`)[0];
+                popup_da76561ca3ffb0c38580e17bc2c6be7a.setContent(html_172069d5dddfd83142eb96c9c908705a);
+            
+        
+
+        marker_f894e409763fe5815f5079a40358fe28.bindPopup(popup_da76561ca3ffb0c38580e17bc2c6be7a)
+        ;
+
+        
+    
+    
+            var marker_b85f0509cd8edd9696af3a8bac6e1499 = L.marker(
+                [55.3500003, 23.7499997],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_003ab6643d346de0d1510a95c12c38c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b85f0509cd8edd9696af3a8bac6e1499.setIcon(icon_003ab6643d346de0d1510a95c12c38c5);
+        
+    
+        var popup_2abcb08fe4c0e75bec102d3c1c056eae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_36c12c050222d025ac75d47a6235e829 = $(`<div id="html_36c12c050222d025ac75d47a6235e829" style="width: 100.0%; height: 100.0%;">Country: Lithuania<br>Tourists: 1538269.0<br>Pollution: 0.06<br>Waste recycling: 22.92</div>`)[0];
+                popup_2abcb08fe4c0e75bec102d3c1c056eae.setContent(html_36c12c050222d025ac75d47a6235e829);
+            
+        
+
+        marker_b85f0509cd8edd9696af3a8bac6e1499.bindPopup(popup_2abcb08fe4c0e75bec102d3c1c056eae)
+        ;
+
+        
+    
+    
+            var marker_43703eb881b80d7894f35d75bbdd5aee = L.marker(
+                [49.8158683, 6.1296751],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_f7242010f276fcb896f1da64d3e7fc6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43703eb881b80d7894f35d75bbdd5aee.setIcon(icon_f7242010f276fcb896f1da64d3e7fc6b);
+        
+    
+        var popup_50870bcc493bdc4d4798ad634ab71273 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2546cb134c3ef8811be5ad9943f353f8 = $(`<div id="html_2546cb134c3ef8811be5ad9943f353f8" style="width: 100.0%; height: 100.0%;">Country: Luxembourg<br>Tourists: 827653.0<br>Pollution: 0.14<br>Waste recycling: 28.37</div>`)[0];
+                popup_50870bcc493bdc4d4798ad634ab71273.setContent(html_2546cb134c3ef8811be5ad9943f353f8);
+            
+        
+
+        marker_43703eb881b80d7894f35d75bbdd5aee.bindPopup(popup_50870bcc493bdc4d4798ad634ab71273)
+        ;
+
+        
+    
+    
+            var marker_0271a2f13b40000eee146436fbe5a5f3 = L.marker(
+                [52.2434979, 5.6343227],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_a5cde06626032b0bd7f22da60bc8eaa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0271a2f13b40000eee146436fbe5a5f3.setIcon(icon_a5cde06626032b0bd7f22da60bc8eaa8);
+        
+    
+        var popup_f4adabb8a5b67b46b22bc8e707fb4e67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_393aff3f8b5341b8e3da3a24159cd94f = $(`<div id="html_393aff3f8b5341b8e3da3a24159cd94f" style="width: 100.0%; height: 100.0%;">Country: Netherlands<br>Tourists: 10307692.0<br>Pollution: 0.1<br>Waste recycling: 24.61</div>`)[0];
+                popup_f4adabb8a5b67b46b22bc8e707fb4e67.setContent(html_393aff3f8b5341b8e3da3a24159cd94f);
+            
+        
+
+        marker_0271a2f13b40000eee146436fbe5a5f3.bindPopup(popup_f4adabb8a5b67b46b22bc8e707fb4e67)
+        ;
+
+        
+    
+    
+            var marker_3b82e2b0245d6027272e11455e53b3f8 = L.marker(
+                [39.6621648, -8.1353519],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_2fe51fdce5f045272e1cf994621c071b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b82e2b0245d6027272e11455e53b3f8.setIcon(icon_2fe51fdce5f045272e1cf994621c071b);
+        
+    
+        var popup_0c4ca7e681d51c204de174f257ca62d8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a22f9042f931778bf5b22728e89d48b4 = $(`<div id="html_a22f9042f931778bf5b22728e89d48b4" style="width: 100.0%; height: 100.0%;">Country: Portugal<br>Tourists: 7024884.0<br>Pollution: 0.03<br>Waste recycling: 16.23</div>`)[0];
+                popup_0c4ca7e681d51c204de174f257ca62d8.setContent(html_a22f9042f931778bf5b22728e89d48b4);
+            
+        
+
+        marker_3b82e2b0245d6027272e11455e53b3f8.bindPopup(popup_0c4ca7e681d51c204de174f257ca62d8)
+        ;
+
+        
+    
+    
+            var marker_4050e1e6ab9568519df6829b07b7042a = L.marker(
+                [39.3260685, -4.8379791],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_c6d2eff8faec7a18fe66f7974072451a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4050e1e6ab9568519df6829b07b7042a.setIcon(icon_c6d2eff8faec7a18fe66f7974072451a);
+        
+    
+        var popup_f076719cdbee8010c3784547a748321b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8be4990574d94d30ddf432f70bd9351a = $(`<div id="html_8be4990574d94d30ddf432f70bd9351a" style="width: 100.0%; height: 100.0%;">Country: Spain<br>Tourists: 50941692.0<br>Pollution: 0.16<br>Waste recycling: 16.84</div>`)[0];
+                popup_f076719cdbee8010c3784547a748321b.setContent(html_8be4990574d94d30ddf432f70bd9351a);
+            
+        
+
+        marker_4050e1e6ab9568519df6829b07b7042a.bindPopup(popup_f076719cdbee8010c3784547a748321b)
+        ;
+
+        
+    
+    
+            var marker_03ede4b432acbbdf30310ac8393e0894 = L.marker(
+                [46.7985624, 8.2319736],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_912a0c954392abbaadbfe0a4d982ee07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03ede4b432acbbdf30310ac8393e0894.setIcon(icon_912a0c954392abbaadbfe0a4d982ee07);
+        
+    
+        var popup_a1ed7f06aec5af723e85f9ae9bf72c54 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_747b758a4c0241767516517f85aed3db = $(`<div id="html_747b758a4c0241767516517f85aed3db" style="width: 100.0%; height: 100.0%;">Country: Switzerland<br>Tourists: 7184000.0<br>Pollution: 0.14<br>Waste recycling: 32.0</div>`)[0];
+                popup_a1ed7f06aec5af723e85f9ae9bf72c54.setContent(html_747b758a4c0241767516517f85aed3db);
+            
+        
+
+        marker_03ede4b432acbbdf30310ac8393e0894.bindPopup(popup_a1ed7f06aec5af723e85f9ae9bf72c54)
+        ;
+
+        
+    
+    
+            var marker_f9e6509ccaec720a7068534ed303de4c = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(marker_cluster_3e96ce67efa2ffa50b592e574228ff93);
+        
+    
+            var icon_e296082709370115e34f02e45ad78a7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f9e6509ccaec720a7068534ed303de4c.setIcon(icon_e296082709370115e34f02e45ad78a7e);
+        
+    
+        var popup_34893126bf2a52a704fecd875c86f5a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_582928b155e52c78121b355ebb8b749d = $(`<div id="html_582928b155e52c78121b355ebb8b749d" style="width: 100.0%; height: 100.0%;">Country: United Kingdom<br>Tourists: 25867961.0<br>Pollution: 0.07<br>Waste recycling: 27.25</div>`)[0];
+                popup_34893126bf2a52a704fecd875c86f5a8.setContent(html_582928b155e52c78121b355ebb8b749d);
+            
+        
+
+        marker_f9e6509ccaec720a7068534ed303de4c.bindPopup(popup_34893126bf2a52a704fecd875c86f5a8)
+        ;
+
+        
+    
+    
+            marker_cluster_3e96ce67efa2ffa50b592e574228ff93.addTo(map_5eb2378d6127491313aa83dd9ad44df2);
+        
+</script>
+</html>
