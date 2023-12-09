@@ -4,5 +4,5 @@
 </div>
 
 ## Informations about the dataset : 
- - in *Water polution dataset* we have continuous data, in this part we did an in-depth analysis with lots of visualisations (using plotly express)
- - in *Water polution dataset for classification*, we have data for classification, we did some models on it
+ - in **Water polution dataset** we have continuous data, in this part we did an in-depth analysis with lots of visualisations (using plotly express)
+ - in **Water polution dataset for classification**, we have data for classification, we did some models on it
